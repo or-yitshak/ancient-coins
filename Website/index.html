@@ -8,8 +8,23 @@
       background-size: cover;
     }
     .container {
-      text-align: center;
-      margin-top: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .title {
+      font-size: 105px;
+      margin-top: 100px;
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .button-container {
+      margin-top: 50px;
     }
     .button {
       background-color: #4CAF50;
@@ -27,13 +42,15 @@
 </head>
 <body>
   <div class="container">
-    <h1>Ancient Coin Classification</h1>
-    <button class="button" onclick="window.location.href='about.html'">About</button>
-    <button class="button" onclick="window.location.href='code.html'">Code</button>
-    <button class="button" onclick="window.location.href='pictures.html'">Pictures</button>
-    <button class="button" onclick="window.location.href='results.html'">Results</button>
-    <button class="button" onclick="window.location.href='charts.html'">Charts</button>
-    <button class="button" onclick="window.location.href='try_it.html'">Try it yourself</button>
+    <h1 class="title">Ancient Coin Classification</h1>
+    <div class="button-container">
+      <button class="button" onclick="window.location.href='about.html'">About</button>
+      <button class="button" onclick="window.location.href='code.html'">Code</button>
+      <button class="button" onclick="window.location.href='pictures.html'">Pictures</button>
+      <button class="button" onclick="window.location.href='results.html'">Results</button>
+      <button class="button" onclick="window.location.href='charts.html'">Charts</button>
+      <button class="button" onclick="window.location.href='try_it.html'">Try it yourself</button>
+    </div>
   </div>
 </body>
 </html>
